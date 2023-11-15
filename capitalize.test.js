@@ -24,3 +24,12 @@ test('capitalizes first letter in a string with multiple words', () => {
   const str = 'hello THERE';
   expect(capitalize(str)).toBe('Hello there');
 })
+
+test('empty string returns an empty string', () => {
+  const str = '';
+  expect(capitalize(str)).toBe('');
+})
+
+test('no argument returns undefined', () => {
+  expect(capitalize()).toBeUndefined();
+})
