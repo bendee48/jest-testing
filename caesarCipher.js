@@ -3,6 +3,7 @@
  * eg. caesarCipher('a', 1) => 'b'
  * @param {string} str - The string to be encrypted
  * @param {number} offset - The number to shift each character by
+ * @returns {string}
  */ 
 function caesarCipher(str, offset) {
   return Array.prototype.reduce.call(str, (newStr, char) => {
